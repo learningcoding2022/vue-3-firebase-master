@@ -11,6 +11,10 @@
   <div id="app">
     <!--can output dynamic data here that is defined in component--this can be the template of the component on js-->
     <p>{{ title }} - {{ author }} - {{ age }}</p>
+    <!--ex of click event: button will respond to click event-->
+    <button v-on:click="age++">Increase age</button><!--v-on is the name of the directive-->
+    <button v-on:click="age--">Decrease age</button>
+    <div @click="title= 'something else'">Change book title</div><!--@click is the same thing as v-on:"click"-->
   </div>
 
   <script src="app.js"></script>
